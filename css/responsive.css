@@ -198,6 +198,20 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .hero-serch-box {
+    max-height: 50px;
+    bottom: -3%;
+  }
+  .hero-serch-box .serch-input-field {
+    padding: 10px 20px;
+    line-height: 29px;
+  }
+  .hero-serch-box .serch-icon-box {
+    max-width: 73px;
+  }
+  .hero-serch-box .serch-icon-box .serch-icon {
+    width: 34px;
+  }
   .special-doctor-card {
     width: 88%;
     margin: 10px 20px;
