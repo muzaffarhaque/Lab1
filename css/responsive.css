@@ -212,6 +212,11 @@
   .hero-serch-box .serch-icon-box .serch-icon {
     width: 34px;
   }
+  .custom-modal-dialog {
+    width: 95vw;
+    padding: 0px;
+    background: transparent;
+  }
   .specialized-section {
     padding-top: 60px;
   }
