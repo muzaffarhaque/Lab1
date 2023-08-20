@@ -404,16 +404,22 @@
         text-align: center;
         margin: 10px 20px;
         &::before {
-
-            height: 80%;
+            height: 56%;
         }
-        p {
-            padding: 30px;
+        .big-text {
+            padding: 21px 17px 8px 17px;
+            font-size: 6px;
+            line-height: 10px;
+            margin-bottom: 0px;
         }
         .customer-image {
             margin: 0 auto;
             position: relative;
-
+            width: 100px;
+        }
+        .customer-name{
+            margin: 0 !important;
+            
         }
 
     }
@@ -465,19 +471,20 @@
     .contact-us-right-box {
         width: 100%;
         padding: 30px 0;
-        .input-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            gap: 10px;
-            img {
-                width: 40px;
-            }
-            input {
-                border-radius: 9px;
-                padding: 10px;
-                height: 40px;
-            }
+       
+    }
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        img {
+            width: 40px;
+        }
+        input {
+            border-radius: 9px;
+            padding: 10px;
+            height: 40px;
         }
     }
     // ?======================= CONTACT US CSS END ======================

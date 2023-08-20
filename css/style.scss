@@ -274,6 +274,15 @@ body {
         justify-content: center;
     }
 }
+// todo:---------------- BOOK APOINTMENT MODAL START ================
+.custom-modal-dialog{
+    max-width: 847px;
+    width: 100vw;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+}
+// todo:---------------- BOOK APOINTMENT MODAL END ================
 // ?===================== HERO SECTION CSS END   ====================
 // 
 // 
@@ -308,6 +317,7 @@ body {
     .special-doctor-img {
         position: absolute;
         bottom: -130px;
+        border-radius: 50%;
         left: 50%;
         width: 18vw;
         max-width: 253px;
@@ -504,7 +514,7 @@ body {
     min-width: 300px;
     text-align: center;
     background-color: white;
-    margin: 30px;
+    margin:10px 0 0 14px;
     &::before {
         content: "";
         position: absolute;
@@ -518,6 +528,7 @@ body {
     }
     p {
         padding: 30px;
+        
     }
     .customer-image {
         margin: 0 auto;
@@ -584,23 +595,24 @@ body {
 .contact-us-right-box {
     width: 56%;
     padding-left: 5%;
-    .input-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 10px;
-        margin: 21px 0;
-        img {
-            width: 6vw;
-        }
-        input {
-            border-radius: 15px;
-            padding: 20px 10%;
-            border: 1px solid #a5a0a0;
-            height: 77px;
-            &::placeholder {
-                font-style: italic;
-            }
+   
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 21px 0;
+    img {
+        width: 6vw;
+    }
+    input {
+        border-radius: 15px;
+        padding: 20px 10%;
+        border: 1px solid #a5a0a0;
+        height: 77px;
+        &::placeholder {
+            font-style: italic;
         }
     }
 }

@@ -281,6 +281,14 @@ body {
   justify-content: center;
 }
 
+.custom-modal-dialog {
+  max-width: 847px;
+  width: 100vw;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+}
+
 .mw-585 {
   width: 100%;
   max-width: 585px;
@@ -312,6 +320,7 @@ body {
 .special-doctor-card .special-doctor-img {
   position: absolute;
   bottom: -130px;
+  border-radius: 50%;
   left: 50%;
   width: 18vw;
   max-width: 253px;
@@ -470,7 +479,7 @@ body {
   min-width: 300px;
   text-align: center;
   background-color: white;
-  margin: 30px;
+  margin: 10px 0 0 14px;
 }
 .customer-card-frame::before {
   content: "";
@@ -537,26 +546,27 @@ body {
   width: 56%;
   padding-left: 5%;
 }
-.contact-us-right-box .input-wrapper {
+
+.input-wrapper {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
   margin: 21px 0;
 }
-.contact-us-right-box .input-wrapper img {
+.input-wrapper img {
   width: 6vw;
 }
-.contact-us-right-box .input-wrapper input {
+.input-wrapper input {
   border-radius: 15px;
   padding: 20px 10%;
   border: 1px solid #a5a0a0;
   height: 77px;
 }
-.contact-us-right-box .input-wrapper input::-moz-placeholder {
+.input-wrapper input::-moz-placeholder {
   font-style: italic;
 }
-.contact-us-right-box .input-wrapper input::placeholder {
+.input-wrapper input::placeholder {
   font-style: italic;
 }
 

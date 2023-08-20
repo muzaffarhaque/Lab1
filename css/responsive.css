@@ -305,14 +305,21 @@
     margin: 10px 20px;
   }
   .customer-card-frame::before {
-    height: 80%;
+    height: 56%;
   }
-  .customer-card-frame p {
-    padding: 30px;
+  .customer-card-frame .big-text {
+    padding: 21px 17px 8px 17px;
+    font-size: 6px;
+    line-height: 10px;
+    margin-bottom: 0px;
   }
   .customer-card-frame .customer-image {
     margin: 0 auto;
     position: relative;
+    width: 100px;
+  }
+  .customer-card-frame .customer-name {
+    margin: 0 !important;
   }
   .frequently-asked-section {
     padding: 30px 0;
@@ -348,16 +355,16 @@
     width: 100%;
     padding: 30px 0;
   }
-  .contact-us-right-box .input-wrapper {
+  .input-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 10px;
   }
-  .contact-us-right-box .input-wrapper img {
+  .input-wrapper img {
     width: 40px;
   }
-  .contact-us-right-box .input-wrapper input {
+  .input-wrapper input {
     border-radius: 9px;
     padding: 10px;
     height: 40px;
