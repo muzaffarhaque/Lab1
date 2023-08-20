@@ -259,12 +259,18 @@
     // 
     // 
     // ?========================= SPECIALIZED DOCTORES SLIDER START =========================
+    .specialized-section{
+        padding-top: 60px;
+    }
     .special-doctor-card {
         width: 88%;
         margin: 10px 20px;
         .special-doctor-img {
             bottom: -67px;
         }
+    }
+    .specilaiz-doctors-slider{
+        padding-top: 5px;
     }
     .card-frame {
         height: 503px;
@@ -302,6 +308,11 @@
     // 
     // 
     // 
+    .call-box {
+        .call-btn{
+            padding: 10px;
+        }
+    }
     // 
     // 
     // 
@@ -383,6 +394,9 @@
     .happy-customar-section {
         padding: 40px 0;
         overflow: hidden;
+        h4{
+            margin-bottom: 0px !important;
+        }
     }
     .customer-card-frame {
         max-width: 300px;

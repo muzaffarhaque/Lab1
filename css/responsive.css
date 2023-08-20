@@ -212,12 +212,18 @@
   .hero-serch-box .serch-icon-box .serch-icon {
     width: 34px;
   }
+  .specialized-section {
+    padding-top: 60px;
+  }
   .special-doctor-card {
     width: 88%;
     margin: 10px 20px;
   }
   .special-doctor-card .special-doctor-img {
     bottom: -67px;
+  }
+  .specilaiz-doctors-slider {
+    padding-top: 5px;
   }
   .card-frame {
     height: 503px;
@@ -241,6 +247,9 @@
   .pain-right-box .wihout-pain-ul li {
     gap: 10px;
     margin-bottom: 14px;
+  }
+  .call-box .call-btn {
+    padding: 10px;
   }
   .content-cards-wrapper {
     display: none !important;
@@ -285,6 +294,9 @@
   .happy-customar-section {
     padding: 40px 0;
     overflow: hidden;
+  }
+  .happy-customar-section h4 {
+    margin-bottom: 0px !important;
   }
   .customer-card-frame {
     max-width: 300px;
