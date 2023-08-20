@@ -1,0 +1,485 @@
+@media (max-width:1024px ) {
+    .logo {
+        display: none;
+    }
+
+    // ?==================== WIDHOUT PAIN CSS START ===================
+    .without-pain-section {
+        padding: 60px 0;
+    }
+    .pain-left-box {
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .pain-right-box {
+        width: 100%;
+    }
+    // ?==================== WIDHOUT PAIN CSS END  ===================
+    // 
+}
+@media (max-width:1240px ) {
+    .container {
+        padding: 0 5%;
+        margin: 0 auto;
+    }
+    .header-wrapper {
+        justify-content: end;
+    }
+    .content-cards-wrapper {
+        flex-wrap: wrap;
+        .colum2 {
+            padding-top: 50px;
+        }
+    }
+    .why-choose-wrapper {
+        .doctor-bg-image {
+            right: -0%;
+            width: 80vw;
+            max-width: 953px;
+        }
+
+    }
+    .footer-wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+        .description-box-footer {
+            width: 100%;
+        }
+        .leagle-servece-footer {
+            width: 100%;
+        }
+
+    }
+    .download-stores{
+        img{
+            width: 47%;
+        }   
+    }
+}
+@media (max-width:1024px ) and (min-width:820px) {
+
+    .logo-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .hero-image {
+        display: none;
+    }
+    .why-choose-wrapper {
+        background-size: 86% auto;
+    }
+}
+@media (max-width:820px) {
+    // ================= COMMON CSS START ================
+
+    .mb-show {
+        display: block;
+    }
+    .mb-flex {
+        display: flex;
+    }
+    .desk-offer,
+    .desk-show {
+        display: none;
+    }
+    .w-51 {
+        width: 100%;
+    }
+    .mb-full {
+        width: 100%;
+    }
+
+    // ================= COMMON CSS END ================
+    // 
+    // 
+    // ================== FONT SIZE START ============
+    .fs-20-14 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .fs-18-16,
+    .fs-20-16,
+    .fs-24-16 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .fs-20-8 {
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .fs-18-10 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .fs-18-10 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .fs-32-12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .fs-48-24 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    // ================== FONT SIZE END  ==============
+    // 
+    // 
+    // 
+    // ?=============== HEADER CSS START ------------------------------
+
+    .menu-lable {
+        display: block;
+        .fa-xmark {
+            display: none;
+        }
+    }
+    .logo-icon {
+        display: none;
+    }
+    .mb-logo {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .header-section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+        border-bottom: 1px solid rgb(240, 237, 237);
+    }
+    .header-wrapper {
+        width: 100%;
+        height: 62px;
+
+    }
+    .side-nav-bar {
+        position: fixed;
+        top: 62px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 50px;
+        transition: all 0.4s;
+        background-color: whitesmoke;
+        z-index: 10;
+
+        li {
+            width: 100%;
+            padding: 10px;
+            text-align: start;
+            padding-left: 20%;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    #so:checked~ {
+        .side-nav-bar {
+            left: 0;
+            transition: all 0.4s;
+        }
+        .menu-lable {
+            .fa-xmark {
+                display: block;
+            }
+            .fa-bars {
+                display: none;
+            }
+        }
+    }
+    // ?=============== HEADER CSS END ------------------------------
+    // 
+    // 
+    // 
+    // 
+    //? ====================== HERO SECTON START =================
+    .hero-section {
+        max-height: 100%;
+        background: linear-gradient(0deg, #bfe8ff 22.19%, rgba(117, 207, 255, 0) 68.54%);
+        .home-hero-wrapper {
+            padding-bottom: 140px;
+            .hero-content {
+                text-align: center;
+                margin-top: clamp(10px,80%,340px);
+                button {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .hero-image {
+        width: 90vw !important;
+        max-width: 429px !important;
+        bottom: unset;
+        // max-width: 400px;
+        top: 62px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    // ?====================== HERO SECTON END =================
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // ?========================= SPECIALIZED DOCTORES SLIDER START =========================
+    .special-doctor-card {
+        width: 88%;
+        margin: 10px 20px;
+        .special-doctor-img {
+            bottom: -67px;
+        }
+    }
+    .card-frame {
+        height: 503px;
+    }
+
+    // ?========================= SPECIALIZED DOCTORES SLIDER END =========================
+    // 
+    // 
+    // 
+    // 
+    // 
+    //
+    .text-center-mb {
+        text-align: center;
+    }
+    .mx-auto-mb {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .without-pain-section {
+        padding: 20px 0;
+        h4 {
+            text-align: center;
+        }
+    }
+    .pain-right-box {
+        .wihout-pain-ul {
+            margin: 20px 0;
+            li {
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // ?---------------- WHY CHOICE US CSS START ----------------------------
+    // 
+
+    // 
+    // 
+    // 
+    .content-cards-wrapper {
+        display: none !important;
+    }
+    .why-choose-wrapper {
+        background: none;
+    }
+    .zic-underline {
+        &::after {
+            height: 10px;
+        }
+    }
+    .why-choose-wrapper {
+        .doctor-bg-image {
+            display: none;
+        }
+
+    }
+    // 
+    // 
+    // ?---------------- WHY CHOICE US CSS ENd ----------------------------
+    // 
+    // 
+    // 
+    // 
+    // 
+    // ?================= footer csss start ====================
+    .footer-sesction {
+        background: #1F1F1F;
+        padding: 40px 0;
+    }
+
+    .description-box-footer {
+        width: 100%;
+        img {
+            width: 37px;
+            aspect-ratio: 1/1;
+            margin-bottom: 32px;
+        }
+        p {
+            margin-bottom: 42px;
+        }
+        .call-box {
+            display: none;
+        }
+
+    }
+    .leagle-servece-footer {
+        width: 100%;
+        padding-left: 0;
+        ul {
+            li {
+                margin-bottom: 10px;
+                &:first-child {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    // ?================= footer csss end ====================
+    // 
+    // 
+    // 
+    // 
+    // 
+    // ?============================ hapyt customaer css start =========================
+    .happy-customar-section {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    .customer-card-frame {
+        max-width: 300px;
+        min-width: 200px;
+        text-align: center;
+        margin: 10px 20px;
+        &::before {
+
+            height: 80%;
+        }
+        p {
+            padding: 30px;
+        }
+        .customer-image {
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+    }
+    // ?============================ hapyt customaer css end =========================
+    // 
+    // 
+    // 
+    // ?======================= FREQUENTLY ASKED Q SECTION START  =========================
+    .frequently-asked-section {
+        padding: 30px 0;
+    }
+    .frequently-question-wrapper {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .frequently-image {
+        margin-bottom: 20px;
+    }
+    .freq-question-ul {
+
+        li {
+            margin-bottom: 20px;
+            border-radius: 12px;
+            padding: 15px 12px 14px;
+        }
+    }
+    // ?======================= FREQUENTLY ASKED Q SECTION END  =========================
+    // 
+    // 
+    // 
+    // 
+    // 
+    // ?======================= CONTACT US CSS START ======================
+    .contact-us-section{
+        padding: 10px 0;
+    }
+    .contact-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-image-left-box{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .contact-us-right-box {
+        width: 100%;
+        padding: 30px 0;
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            img {
+                width: 40px;
+            }
+            input {
+                border-radius: 9px;
+                padding: 10px;
+                height: 40px;
+            }
+        }
+    }
+    // ?======================= CONTACT US CSS END ======================
+    // 
+    // 
+    // 
+    // 
+    // ?====================== download app css start =========================
+    .download-app-section{
+        padding: 20px 0 62px 0;
+    }
+    .download-app-wrapper{
+       flex-wrap: wrap;
+        
+    }
+  
+    .mk-full{
+        width: 100%;
+    }
+    .download-left-image-box{
+        img{
+            width: 100%;
+        }
+    }
+    // ?====================== download app css end =========================
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+}
+//
