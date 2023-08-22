@@ -316,6 +316,7 @@ body {
   width: 6vw;
   aspect-ratio: 1/1;
   max-width: 42px;
+  min-width: 33px;
   height: 100%;
   background-color: white;
   display: flex;
