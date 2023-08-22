@@ -1,729 +1,847 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a59b9b09ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" href="./css/style.css"/>
-        <link rel="stylesheet" href="./css/responsive.css"/>
-        <title>NotInLine</title>
-        <link rel="stylesheet" href="./images/NIL_logo.png"/>
-    </head>
-    <body>
-        <!-- HEADER CSS START -->
-        <header class="header-section">
-            <div class="container">
-                <div class="header-wrapper">
-                    <input type="checkbox" name="so" id="so" class="d-none"/>
-                    <label for="so" class="menu-lable">
-                        <i class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-xmark"></i>
-                    </label>
-                    <img src="./images/logo.svg" class="logo" alt=""/>
-                    <img src="./images/mb-logo.png" class="mb-logo" alt=""/>
-                    <img src="./images/NIL_logo.png" class="logo-icon" alt=""/>
-                    <ul class="side-nav-bar">
-                        <li class="activ">Home</li>
-                        <li>About us</li>
-                        <li>View hospitals</li>
-                        <li>contact us</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <!-- HEADER CSS END -->
-        <!--  -->
-        <!-- ========================= HERO SECTION START ============================  -->
-        <div class="hero-section">
-            <div class="container">
-                <div class="home-hero-wrapper">
-                    <div class="hero-content">
-                        <h4 class="fs-48-24 fw-bold mb-0 pb-3">
-                            Find the
-                            <span class="zic-underline">
-                                Best
-                            </span>
-                            Cardiologists in Bhubaneshwar
-                        </h4>
-                        <p class="fs-20-14 fw-semibold black-2f2 mb-4">
-                            Get all your heart issues treated with the best doctors in town! Now with us
-                            find the best cardiologists in Bhubaneshwar.
-                        </p>
-                        <button
-                            type="button"
-                            class="primary-bth mb-4 mw-333"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Book appointment</button>
-                        <!-- todo :================ BOOK APOINTMENT MODERL START =================== -->
-                        <div
-                            class="modal fade"
-                            id="exampleModal"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog custom-modal-dialog">
-                                <div class="modal-content border-0">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title blue-138 fw-semibold w-100 text-start" id="exampleModalLabel">Book Appointment</h5>
-                                        <button
-                                            type="button"
-                                            class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="input-wrapper ">
-                                            <img src="./images/person-circle-icon.png" alt=""/>
-                                            <input type="text" class="input-box fs-20-14" placeholder="Full Name"/>
-                                        </div>
-                                        <div class="input-wrapper ">
-                                            <img src="./images/email-contact-icon.png" alt=""/>
-                                            <input type="text" class="input-box fs-20-14" placeholder="Email"/>
-                                        </div>
-                                        <div class="input-wrapper ">
-                                            <img src="./images/call-contact-iocn.png" alt=""/>
-                                            <input type="text" class="input-box fs-20-14" placeholder="Phone number"/>
-                                        </div>
-                                        <div class="input-wrapper ">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                            <input type="date" class="input-box fs-20-14" placeholder="Date time"/>
-                                        </div>
-                                        <div class="input-wrapper">
-                                            <i class="fa-regular fa-clock"></i>
-                                            <input type="time" class="input-box fs-20-14" placeholder="Date time"/>
-                                        </div>
-                                        <div class="input-wrapper ">
-                                            <i class="fa-regular fa-square-caret-down"></i>
-                                            <select class="form-select input-box fs-20-14" aria-label="">
-                                                <option selected>Open this select menu</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary fs-24-16" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn primary-bth p-2 px-4 fs-24-16 rounded-2"> Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- todo :================ BOOK APOINTMENT MODERL END =================== -->
-                        <button class="host-btn mw-333">Download app</button>
-                    </div>
-                    <img src="./images/heor-img.svg" class="hero-image" alt=""/>
-                    <div class="hero-serch-box">
-                        <input
-                            type="text"
-                            placeholder="Search for doctors, hospitals, medicines..."
-                            class="serch-input-field fs-24-16 fw-normal black-6E6"/>
-                        <div class="serch-icon-box">
-                            <img src="./images/search.svg" class="serch-icon" alt="iocn"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>NotInLine</title>
+    <link rel="stylesheet" href="./images/NIL_logo.png" />
+  </head>
+  <body>
+    <!-- HEADER CSS START -->
+    <header class="header-section">
+      <div class="container">
+        <div class="header-wrapper">
+          <input type="checkbox" name="so" id="so" class="d-none" />
+          <label for="so" class="menu-lable">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <img src="./images/logo.svg" class="logo" alt="" />
+          <img src="./images/mb-logo.png" class="mb-logo" alt="" />
+          <img src="./images/NIL_logo.png" class="logo-icon" alt="" />
+          <ul class="side-nav-bar">
+            <li class="activ">Home</li>
+            <li>About us</li>
+            <li>View hospitals</li>
+            <li>contact us</li>
+          </ul>
         </div>
-        <!-- ========================= HERO SECTION END ==============================  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!-- ?====================== SPECIALIZED SECTION START =================== -->
-        <div class="specialized-section">
-            <div class="container">
-                <div class="spacialixed-wrapper text-center">
-                    <h4 class="fs-48-24 fw-bold mx-auto mw-880 mb-0 pb-3">
-                        Take a look at our list of
-                        <span class="zic-underline">
-                            specialized
-                        </span>
-                        doctors
-                    </h4>
-                    <p class="fs-24-16 fw-normal text-center mw-585 mx-auto black-6E6 mx-auto">
-                        Explore our list of specialized cardiologists and get treated by the best in the
-                        field
-                    </p>
-                    <div class="specilaiz-doctors-slider">
-                        <div class="slider-wrapper">
-                            <div class="card-frame">
-                                <div class="special-doctor-card">
-                                    <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
-                                        Dr. Diptesh Kumar
-                                    </h6>
-                                    <button class="sub-primary-btn">Cardiologist</button>
-                                    <p
-                                        class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1">
-                                        4.3
-                                        <img src="./images/start.svg" alt="icon"/>
-                                        <span class="black-6E6">( 75 Reviews )</span>
-                                    </p>
-                                    <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
-                                        150+ patients treated
-                                    </h5>
-                                    <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
-                                        12+ years experience
-                                    </p>
-                                    <img src="./images/Ellipse3.svg" class="special-doctor-img" alt=""/>
-                                </div>
-                            </div>
-                            <div class="card-frame">
-                                <div class="special-doctor-card">
-                                    <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
-                                        Dr. Aditya Dutta
-                                    </h6>
-                                    <button class="sub-primary-btn">Cardiologist</button>
-                                    <p
-                                        class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1">
-                                        4.1
-                                        <img src="./images/start.svg" alt="icon"/>
-                                        <span class="black-6E6">( 75 Reviews )</span>
-                                    </p>
-                                    <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
-                                        250+ patients treated
-                                    </h5>
-                                    <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
-                                        20+ years of experience
-                                    </p>
-                                    <img src="./images/specialized2.svg" class="special-doctor-img" alt=""/>
-                                </div>
-                            </div>
-                            <div class="card-frame">
-                                <div class="special-doctor-card">
-                                    <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
-                                        Dr. Yusuf Qureshi
-                                    </h6>
-                                    <button class="sub-primary-btn">Cardiologist</button>
-                                    <p
-                                        class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1">
-                                        4.3
-                                        <img src="./images/start.svg" alt="icon"/>
-                                        <span class="black-6E6">( 75 Reviews )</span>
-                                    </p>
-                                    <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
-                                        150+ patients treated
-                                    </h5>
-                                    <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
-                                        2+ years experience
-                                    </p>
-                                    <img src="./images/specialized-doctor1.svg" class="special-doctor-img" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+      </div>
+    </header>
+    <!-- HEADER CSS END -->
+    <!--  -->
+    <!-- ========================= HERO SECTION START ============================  -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="home-hero-wrapper">
+          <div class="hero-content">
+            <h4 class="fs-48-24 fw-bold mb-0 pb-3">
+              Find the
+              <span class="zic-underline"> Best </span>
+              Cardiologists in Bhubaneshwar
+            </h4>
+            <p class="fs-20-14 fw-semibold black-2f2 mb-4">
+              Get all your heart issues treated with the best doctors in town!
+              Now with us find the best cardiologists in Bhubaneshwar.
+            </p>
+            <button
+              type="button"
+              class="primary-bth mb-4 mw-333"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Book appointment
+            </button>
+            <!-- todo :================ BOOK APOINTMENT MODERL START =================== -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog custom-modal-dialog">
+                <div class="modal-content border-0">
+                  <div class="modal-header">
+                    <h5
+                      class="modal-title blue-138 fw-semibold w-100 text-start"
+                      id="exampleModalLabel"
+                    >
+                      Book Appointment
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-solid fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="input-box fs-20-14"
+                        placeholder="Full Name"
+                      />
                     </div>
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-solid fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="input-box fs-20-14"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="input-box fs-20-14"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-regular fa-calendar-days"></i>
+                      </span>
+                      <input
+                        type="date"
+                        class="input-box fs-20-14"
+                        placeholder="Date time"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-regular fa-clock"></i>
+                      </span>
+                      <input
+                        type="time"
+                        class="input-box fs-20-14"
+                        placeholder=" time"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <span class="icon-frame">
+                        <i class="fa-regular fa-square-caret-down"></i>
+                      </span>
+                      <select
+                        class="form-select input-box fs-20-14"
+                        aria-label=""
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary fs-24-16"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="btn primary-bth p-2 px-4 fs-24-16 rounded-2"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+            <!-- todo :================ BOOK APOINTMENT MODERL END =================== -->
+            <button class="host-btn mw-333">Download app</button>
+          </div>
+          <img src="./images/heor-img.svg" class="hero-image" alt="" />
+          <div class="hero-serch-box">
+            <input
+              type="text"
+              placeholder="Search for doctors, hospitals, medicines..."
+              class="serch-input-field fs-24-16 fw-normal black-6E6"
+            />
+            <div class="serch-icon-box">
+              <img src="./images/search.svg" class="serch-icon" alt="iocn" />
+            </div>
+          </div>
         </div>
-        <!-- ?====================== SPECIALIZED SECTION END =================== -->
-        <!--  -->
-        <!--  -->
-        <div class="add-bgwave">
-            <!--  -->
-            <!-- ?=========================== LIVE WITHOUT PAIN SECTON START ====================== -->
-            <div class="without-pain-section">
-                <div class="container">
-                    <div
-                        class="without-pain-srapper d-flex align-items-center justify-content-center flex-wrap-reverse">
-                        <div class="pain-left-box">
-                            <img src="./images/Doc_team-removebg.png" alt=""/>
-                        </div>
-                        <div class="pain-right-box">
-                            <h4 class="fs-48-24 fw-semibold mb-0 pb-3">
-                                Live
-                                <span class="zic-underline">
-                                    without
-                                </span>
-                                pain & get back to being you
-                            </h4>
-                            <ul class="wihout-pain-ul">
-                                <li class="fs-24-16 fw-semibold black-2f2">
-                                    <img src="./images/assignment_turned_in.svg" alt=""/>
-                                    Check doctor profiles
-                                </li>
-                                <li class="fs-24-16 fw-semibold black-2f2">
-                                    <img src="./images/assignment_turned_in.svg" alt=""/>
-                                    Book appointments
-                                </li>
-                                <li class="fs-24-16 fw-semibold black-2f2">
-                                    <img src="./images/assignment_turned_in.svg" alt=""/>
-                                    Receive your consultation
-                                </li>
-                                <li class="fs-24-16 fw-semibold black-2f2">
-                                    <img src="./images/assignment_turned_in.svg" alt=""/>
-                                    Get your solutions
-                                </li>
-                            </ul>
-                            <div class="text-center-mb">
-                                <button class="primary-bth py-3 fw-semibold mx-auto-mb">
-                                    Explore
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+    </div>
+    <!-- ========================= HERO SECTION END ==============================  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ?====================== SPECIALIZED SECTION START =================== -->
+    <div class="specialized-section">
+      <div class="container">
+        <div class="spacialixed-wrapper text-center">
+          <h4 class="fs-48-24 fw-bold mx-auto mw-880 mb-0 pb-3">
+            Take a look at our list of
+            <span class="zic-underline"> specialized </span>
+            doctors
+          </h4>
+          <p
+            class="fs-24-16 fw-normal text-center mw-585 mx-auto black-6E6 mx-auto"
+          >
+            Explore our list of specialized cardiologists and get treated by the
+            best in the field
+          </p>
+          <div class="specilaiz-doctors-slider">
+            <div class="slider-wrapper">
+              <div class="card-frame">
+                <div class="special-doctor-card">
+                  <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
+                    Dr. Diptesh Kumar
+                  </h6>
+                  <button class="sub-primary-btn">Cardiologist</button>
+                  <p
+                    class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1"
+                  >
+                    4.3
+                    <img src="./images/start.svg" alt="icon" />
+                    <span class="black-6E6">( 75 Reviews )</span>
+                  </p>
+                  <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
+                    150+ patients treated
+                  </h5>
+                  <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
+                    12+ years experience
+                  </p>
+                  <img
+                    src="./images/Ellipse3.svg"
+                    class="special-doctor-img"
+                    alt=""
+                  />
                 </div>
+              </div>
+              <div class="card-frame">
+                <div class="special-doctor-card">
+                  <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
+                    Dr. Aditya Dutta
+                  </h6>
+                  <button class="sub-primary-btn">Cardiologist</button>
+                  <p
+                    class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1"
+                  >
+                    4.1
+                    <img src="./images/start.svg" alt="icon" />
+                    <span class="black-6E6">( 75 Reviews )</span>
+                  </p>
+                  <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
+                    250+ patients treated
+                  </h5>
+                  <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
+                    20+ years of experience
+                  </p>
+                  <img
+                    src="./images/specialized2.svg"
+                    class="special-doctor-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="card-frame">
+                <div class="special-doctor-card">
+                  <h6 class="fs-28-18 fw-semibold text-start black-2f2 pb-1">
+                    Dr. Yusuf Qureshi
+                  </h6>
+                  <button class="sub-primary-btn">Cardiologist</button>
+                  <p
+                    class="fs-20-16 fw-semibold black-2f2 d-flex align-content-center gap-3 my-2 py-1"
+                  >
+                    4.3
+                    <img src="./images/start.svg" alt="icon" />
+                    <span class="black-6E6">( 75 Reviews )</span>
+                  </p>
+                  <h5 class="fs-20-16 fw-semibold black-2f2 m-0 text-start">
+                    150+ patients treated
+                  </h5>
+                  <p class="fs-20-16 fw-medium black-2f2 my-2 text-start">
+                    2+ years experience
+                  </p>
+                  <img
+                    src="./images/specialized-doctor1.svg"
+                    class="special-doctor-img"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-            <!-- ?=========================== LIVE WITHOUT PAIN SECTON END ====================== -->
-            <!--  -->
-            <!--  -->
-            <!--  -->
-            <!--  -->
-            <!--  -->
-            <!--  -->
-            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ?====================== SPECIALIZED SECTION END =================== -->
+    <!--  -->
+    <!--  -->
+    <div class="add-bgwave">
+      <!--  -->
+      <!-- ?=========================== LIVE WITHOUT PAIN SECTON START ====================== -->
+      <div class="without-pain-section">
+        <div class="container">
+          <div
+            class="without-pain-srapper d-flex align-items-center justify-content-center flex-wrap-reverse"
+          >
+            <div class="pain-left-box">
+              <img src="./images/Doc_team-removebg.png" alt="" />
+            </div>
+            <div class="pain-right-box">
+              <h4 class="fs-48-24 fw-semibold mb-0 pb-3">
+                Live
+                <span class="zic-underline"> without </span>
+                pain & get back to being you
+              </h4>
+              <ul class="wihout-pain-ul">
+                <li class="fs-24-16 fw-semibold black-2f2">
+                  <img src="./images/assignment_turned_in.svg" alt="" />
+                  Check doctor profiles
+                </li>
+                <li class="fs-24-16 fw-semibold black-2f2">
+                  <img src="./images/assignment_turned_in.svg" alt="" />
+                  Book appointments
+                </li>
+                <li class="fs-24-16 fw-semibold black-2f2">
+                  <img src="./images/assignment_turned_in.svg" alt="" />
+                  Receive your consultation
+                </li>
+                <li class="fs-24-16 fw-semibold black-2f2">
+                  <img src="./images/assignment_turned_in.svg" alt="" />
+                  Get your solutions
+                </li>
+              </ul>
+              <div class="text-center-mb">
+                <button class="primary-bth py-3 fw-semibold mx-auto-mb">
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ?=========================== LIVE WITHOUT PAIN SECTON END ====================== -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
 
-            <!--  -->
-            <!-- ?------------------------ WHY CHOICE US SECTION START ------------------------- -->
-            <div class="top-package-section">
-                <div class="container">
-                    <h4 class="fs-48-24 fw-bold text-center mb-4 mt-5">
-                        Why
-                        <span class="zic-underline">
-                            choose
-                        </span>us?
-                    </h4>
-                    <p class="fs-24-16 fw-semibold text-center mw-927 black-6E6 mx-auto">
-                        We want you and your heart to be healthy so you can live a happy life!
-                    </p>
-                    <div class="why-choose-wrapper">
-                        <img src="./images/doctor.png" class="doctor-bg-image" alt=""/>
-                        <div class="content-cards-wrapper d-flex">
-                            <div class="colum d-flex flex-column gap-5">
-                                <div class="box-one">
-                                    <img src="./images/Ellipse16.svg" alt="image"/>
-                                    <h4 class="fs-28-18 fw-bold me-5 mb-3">
-                                        NABL Accredited Labs
-                                    </h4>
-                                    <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
-                                        Get accurate and safe results from our NABL-certified lab partners.
-                                    </p>
-                                </div>
-                                <div class="box-one mt-5">
-                                    <img src="./images/Ellipse13.svg" alt="image"/>
-                                    <h4 class="fs-28-18 fw-bold me-5 mb-3 pe-5">
-                                        Timely collections
-                                    </h4>
-                                    <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
-                                        Get accurate and safe results from our NABL-certified lab partners.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="colum2 d-flex flex-column gap-5">
-                                <div class="box-one">
-                                    <img src="./images/Ellipse14.svg" alt="image"/>
-                                    <h4 class="fs-28-18 fw-bold me-5 mb-3">Value experience</h4>
-                                    <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
-                                        Get accurate and safe results from our NABL-certified lab partners.
-                                    </p>
-                                </div>
-                                <div class="box-one mt-5">
-                                    <img src="./images/Ellipse15.svg" alt="image"/>
-                                    <h4 class="fs-28-18 fw-bold me-5 mb-3 pe-5">Transparency</h4>
-                                    <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
-                                        Get accurate and safe results from our NABL-certified lab partners.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-accordion mb-show">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button
-                                            class="accordion-button"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne"
-                                            aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <img src="./images/Ellipse16.svg" class="hed-image" alt=""/>&nbsp;&nbsp;&nbsp; NABL Accredited Labs
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseOne"
-                                        class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body fs-18-10 fw-semibold black-6E6">
-                                            Enjoy hassle free medical assistance with our transparent approach. We
-                                            prioritize transparency for your smooth medical journey.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseTwo"
-                                            aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            <img src="./images/Ellipse13.svg" class="hed-image" alt=""/>&nbsp;&nbsp;&nbsp; Timely collections
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseTwo"
-                                        class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body fs-18-10 fw-semibold black-6E6">
-                                            Enjoy hassle free medical assistance with our transparent approach. We
-                                            prioritize transparency for your smooth medical journey.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseThree"
-                                            aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            <img src="./images/Ellipse14.svg" class="hed-image" alt=""/>&nbsp;&nbsp;&nbsp; Value experience
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseThree"
-                                        class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body fs-18-10 fw-semibold black-6E6">
-                                            Enjoy hassle free medical assistance with our transparent approach. We
-                                            prioritize transparency for your smooth medical journey.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFour"
-                                            aria-expanded="false"
-                                            aria-controls="collapseFoure">
-                                            <img src="./images/Ellipse15.svg" class="hed-image" alt=""/>&nbsp;&nbsp;&nbsp; Transparency
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseFour"
-                                        class="accordion-collapse collapse"
-                                        aria-labelledby="headingFour"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body fs-18-10 fw-semibold black-6E6">
-                                            Enjoy hassle free medical assistance with our transparent approach. We
-                                            prioritize transparency for your smooth medical journey.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="./images/doctor.png" class="w-100" alt="img"/>
-                        </div>
-                    </div>
+      <!--  -->
+      <!-- ?------------------------ WHY CHOICE US SECTION START ------------------------- -->
+      <div class="top-package-section">
+        <div class="container">
+          <h4 class="fs-48-24 fw-bold text-center mb-4 mt-5">
+            Why
+            <span class="zic-underline"> choose </span>us?
+          </h4>
+          <p class="fs-24-16 fw-semibold text-center mw-927 black-6E6 mx-auto">
+            We want you and your heart to be healthy so you can live a happy
+            life!
+          </p>
+          <div class="why-choose-wrapper">
+            <img src="./images/doctor.png" class="doctor-bg-image" alt="" />
+            <div class="content-cards-wrapper d-flex">
+              <div class="colum d-flex flex-column gap-5">
+                <div class="box-one">
+                  <img src="./images/Ellipse16.svg" alt="image" />
+                  <h4 class="fs-28-18 fw-bold me-5 mb-3">
+                    NABL Accredited Labs
+                  </h4>
+                  <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
+                    Get accurate and safe results from our NABL-certified lab
+                    partners.
+                  </p>
                 </div>
-            </div>
-            <!-- ?------------------------ WHY CHOICE US SECTION END ------------------------- -->
-            <!--  -->
-            <!--  -->
-        </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--? =========================== HAPPYT CUSTOMERS SECTION START ============================== -->
-        <div class="happy-customar-section">
-            <div class="container">
-                <h4 class="fs-48-24 fw-semibold text-center mb-4">
-                    Hear from our
-                    <span class="zic-underline">
-                        happy
-                    </span>customers
-                </h4>
-                <div class="happy-customer-wrapper">
-                    <div class="mx-2">
-                        <div class="customer-card-frame">
-                            <p class="fw-medium black-2f2 big-text">
-                                “I recently used this online doctor appointment booking service, and I must say,
-                                it exceeded my expectations. The website's user-friendly interface made
-                                scheduling an appointment a breeze. Within minutes, I found a suitable doctor,
-                                selected a convenient time slot, and received a confirmation email. The best
-                                part was the wide selection of doctors and medical specialties available. I
-                                highly recommend this platform to anyone seeking a hassle-free way to book
-                                doctor appointments online.”
-                            </p>
-                            <img src="./images/customer1.svg" class="customer-image" alt=""/>
-                            <p
-                                class="fs-20-8 blue-138 fw-semibold text-center w-100 my-3 py-2 customer-name">
-                                Xavier Adam
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mx-2">
-                        <div class="customer-card-frame">
-                            <p class="fw-medium black-2f2 big-text">
-                                “I recently used this online doctor appointment booking service, and I must say,
-                                it exceeded my expectations. The website's user-friendly interface made
-                                scheduling an appointment a breeze. Within minutes, I found a suitable doctor,
-                                selected a convenient time slot, and received a confirmation email. The best
-                                part was the wide selection of doctors and medical specialties available. I
-                                highly recommend this platform to anyone seeking a hassle-free way to book
-                                doctor appointments online.”
-                            </p>
-                            <img src="./images/custome2.svg" class="customer-image" alt=""/>
-                            <p
-                                class="fs-20-8 blue-138 fw-semibold text-center w-100 my-3 py-2 customer-name">
-                                Dinesh Samanth
-                            </p>
-                        </div>
-                    </div>
+                <div class="box-one mt-5">
+                  <img src="./images/Ellipse13.svg" alt="image" />
+                  <h4 class="fs-28-18 fw-bold me-5 mb-3 pe-5">
+                    Timely collections
+                  </h4>
+                  <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
+                    Get accurate and safe results from our NABL-certified lab
+                    partners.
+                  </p>
                 </div>
+              </div>
+              <div class="colum2 d-flex flex-column gap-5">
+                <div class="box-one">
+                  <img src="./images/Ellipse14.svg" alt="image" />
+                  <h4 class="fs-28-18 fw-bold me-5 mb-3">Value experience</h4>
+                  <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
+                    Get accurate and safe results from our NABL-certified lab
+                    partners.
+                  </p>
+                </div>
+                <div class="box-one mt-5">
+                  <img src="./images/Ellipse15.svg" alt="image" />
+                  <h4 class="fs-28-18 fw-bold me-5 mb-3 pe-5">Transparency</h4>
+                  <p class="fs-18-10 fw-semibold black-6E6 me-5 pe-3 mb-0">
+                    Get accurate and safe results from our NABL-certified lab
+                    partners.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="mb-accordion mb-show">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <img
+                        src="./images/Ellipse16.svg"
+                        class="hed-image"
+                        alt=""
+                      />&nbsp;&nbsp;&nbsp; NABL Accredited Labs
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body fs-18-10 fw-semibold black-6E6">
+                      Enjoy hassle free medical assistance with our transparent
+                      approach. We prioritize transparency for your smooth
+                      medical journey.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <img
+                        src="./images/Ellipse13.svg"
+                        class="hed-image"
+                        alt=""
+                      />&nbsp;&nbsp;&nbsp; Timely collections
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body fs-18-10 fw-semibold black-6E6">
+                      Enjoy hassle free medical assistance with our transparent
+                      approach. We prioritize transparency for your smooth
+                      medical journey.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <img
+                        src="./images/Ellipse14.svg"
+                        class="hed-image"
+                        alt=""
+                      />&nbsp;&nbsp;&nbsp; Value experience
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body fs-18-10 fw-semibold black-6E6">
+                      Enjoy hassle free medical assistance with our transparent
+                      approach. We prioritize transparency for your smooth
+                      medical journey.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFoure"
+                    >
+                      <img
+                        src="./images/Ellipse15.svg"
+                        class="hed-image"
+                        alt=""
+                      />&nbsp;&nbsp;&nbsp; Transparency
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body fs-18-10 fw-semibold black-6E6">
+                      Enjoy hassle free medical assistance with our transparent
+                      approach. We prioritize transparency for your smooth
+                      medical journey.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/doctor.png" class="w-100" alt="img" />
+            </div>
+          </div>
         </div>
-        <!--? =========================== HAPPYT CUSTOMERS SECTION END ============================== -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
+      </div>
+      <!-- ?------------------------ WHY CHOICE US SECTION END ------------------------- -->
+      <!--  -->
+      <!--  -->
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--? =========================== HAPPYT CUSTOMERS SECTION START ============================== -->
+    <div class="happy-customar-section">
+      <div class="container">
         <h4 class="fs-48-24 fw-semibold text-center mb-4">
-            Still have
-            <span class="zic-underline">
-                questions
-            </span>?
+          Hear from our
+          <span class="zic-underline"> happy </span>customers
         </h4>
-        <!--  -->
-        <!--?======================= FREQUENTLY ASKED Q SECTION START ====================== -->
-        <div class="frequently-asked-section">
-            <div class="container">
-                <div class="frequently-question-wrapper d-flex">
-                    <div class="w-51">
-                        <img src="./images/question.png" class="frequently-image" alt=""/>
-                    </div>
-                    <div class="w-51">
-                        <h4 class="fs-48-24 fw-semibold text-center mb-4">
-                            <span class="zic-underline">
-                                Frequently
-                            </span>asked questions
-                        </h4>
-                        <ul class="freq-question-ul">
-                            <li class="fs-20-16 fw-semibold black-2f2">
-                                Can I book an appointment on behalf of someone else?
-                            </li>
-                            <li class="fs-20-16 fw-semibold black-2f2">
-                                Why do I need a cardiologist?
-                            </li>
-                            <li class="fs-20-16 fw-semibold black-2f2">
-                                Can I get a weekend appointment
-                            </li>
-                            <li class="fs-20-16 fw-semibold black-2f2">
-                                Is there an option for online consultation?
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="happy-customer-wrapper">
+          <div class="mx-2">
+            <div class="customer-card-frame">
+              <p class="fw-medium black-2f2 big-text">
+                “I recently used this online doctor appointment booking service,
+                and I must say, it exceeded my expectations. The website's
+                user-friendly interface made scheduling an appointment a breeze.
+                Within minutes, I found a suitable doctor, selected a convenient
+                time slot, and received a confirmation email. The best part was
+                the wide selection of doctors and medical specialties available.
+                I highly recommend this platform to anyone seeking a hassle-free
+                way to book doctor appointments online.”
+              </p>
+              <img src="./images/customer1.svg" class="customer-image" alt="" />
+              <p
+                class="fs-20-8 blue-138 fw-semibold text-center w-100 my-3 py-2 customer-name"
+              >
+                Xavier Adam
+              </p>
             </div>
+          </div>
+          <div class="mx-2">
+            <div class="customer-card-frame">
+              <p class="fw-medium black-2f2 big-text">
+                “I recently used this online doctor appointment booking service,
+                and I must say, it exceeded my expectations. The website's
+                user-friendly interface made scheduling an appointment a breeze.
+                Within minutes, I found a suitable doctor, selected a convenient
+                time slot, and received a confirmation email. The best part was
+                the wide selection of doctors and medical specialties available.
+                I highly recommend this platform to anyone seeking a hassle-free
+                way to book doctor appointments online.”
+              </p>
+              <img src="./images/custome2.svg" class="customer-image" alt="" />
+              <p
+                class="fs-20-8 blue-138 fw-semibold text-center w-100 my-3 py-2 customer-name"
+              >
+                Dinesh Samanth
+              </p>
+            </div>
+          </div>
         </div>
-        <!--?======================= FREQUENTLY ASKED Q SECTION END ====================== -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!-- ? =========================== CONTACT US SECTION START ============================ -->
-        <div class="contact-us-section">
-            <div class="container">
-                <h4 class="fs-48-24 fw-semibold text-center mb-4">
-                    <span class="zic-underline">
-                        Contact
-                    </span>
-                    us
-                </h4>
-                <div class="contact-wrapper">
-                    <div class="contact-image-left-box">
-                        <img src="./images/contact-us-image.png" alt="img"/>
-                    </div>
-                    <div class="contact-us-right-box">
-                        <div class="input-wrapper">
-                            <img src="./images/person-circle-icon.png" alt=""/>
-                            <input type="text" class="input-box fs-20-14" placeholder="Full Name"/>
-                        </div>
-                        <div class="input-wrapper">
-                            <img src="./images/email-contact-icon.png" alt=""/>
-                            <input type="text" class="input-box fs-20-14" placeholder="Email"/>
-                        </div>
-                        <div class="input-wrapper">
-                            <img src="./images/call-contact-iocn.png" alt=""/>
-                            <input type="text" class="input-box fs-20-14" placeholder="Phone number"/>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-end">
-                            <button class="primary-bth p-2 px-4 fs-24-16 rounded-2">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <!--? =========================== HAPPYT CUSTOMERS SECTION END ============================== -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <h4 class="fs-48-24 fw-semibold text-center mb-4">
+      Still have
+      <span class="zic-underline"> questions </span>?
+    </h4>
+    <!--  -->
+    <!--?======================= FREQUENTLY ASKED Q SECTION START ====================== -->
+    <div class="frequently-asked-section">
+      <div class="container">
+        <div class="frequently-question-wrapper d-flex">
+          <div class="w-51">
+            <img src="./images/question.png" class="frequently-image" alt="" />
+          </div>
+          <div class="w-51">
+            <h4 class="fs-48-24 fw-semibold text-center mb-4">
+              <span class="zic-underline"> Frequently </span>asked questions
+            </h4>
+            <ul class="freq-question-ul">
+              <li class="fs-20-16 fw-semibold black-2f2">
+                Can I book an appointment on behalf of someone else?
+              </li>
+              <li class="fs-20-16 fw-semibold black-2f2">
+                Why do I need a cardiologist?
+              </li>
+              <li class="fs-20-16 fw-semibold black-2f2">
+                Can I get a weekend appointment
+              </li>
+              <li class="fs-20-16 fw-semibold black-2f2">
+                Is there an option for online consultation?
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- ? =========================== CONTACT US SECTION START ============================ -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!-- ?======================= DOWNLOAD NOTINLINE APP SECTION START ========================= -->
-        <div class="download-app-section">
-            <div class="container">
-                <h4 class="fs-48-24 fw-semibold text-center mb-4">
-                    Download the NotInLine
-                    <span class="zic-underline">
-                        NotInLine
-                    </span>
-                    app
-                </h4>
-                <div class="download-app-wrapper d-flex">
-                    <div class="download-left-image-box">
-                        <img src="./images/dwonload-app-img.png" alt="image"/>
-                    </div>
-                    <div class="download-right-box w-100">
-                        <div class="call-box bg-white">
-                            <span class="number text-black">
-                                <span>91</span>
-                                <span>|</span>
-                            </span >
-                            <input type="text" class="phone-no fs-24-16"/>
-                            <span class="call-btn"><img src="./images/call.svg" alt="" class="m-0"/></span>
-                        </div>
-                        <div
-                            class="download-stores d-flex align-items-center justify-content-start mt-4 gap-3">
-                            <img src="./images/aple-store.png" class="" alt=""/>
-                            <img src="./images/play-store.png" class="" alt=""/>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+    <!--?======================= FREQUENTLY ASKED Q SECTION END ====================== -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ? =========================== CONTACT US SECTION START ============================ -->
+    <div class="contact-us-section">
+      <div class="container">
+        <h4 class="fs-48-24 fw-semibold text-center mb-4">
+          <span class="zic-underline"> Contact </span>
+          us
+        </h4>
+        <div class="contact-wrapper">
+          <div class="contact-image-left-box">
+            <img src="./images/contact-us-image.png" alt="img" />
+          </div>
+          <div class="contact-us-right-box">
+            <div class="input-wrapper">
+              <img src="./images/person-circle-icon.png" alt="" />
+              <input
+                type="text"
+                class="input-box fs-20-14"
+                placeholder="Full Name"
+              />
             </div>
+            <div class="input-wrapper">
+              <img src="./images/email-contact-icon.png" alt="" />
+              <input
+                type="text"
+                class="input-box fs-20-14"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-wrapper">
+              <img src="./images/call-contact-iocn.png" alt="" />
+              <input
+                type="text"
+                class="input-box fs-20-14"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="d-flex align-items-center justify-content-end">
+              <button class="primary-bth p-2 px-4 fs-24-16 rounded-2">
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- ?======================= DOWNLOAD NOTINLINE END ========================= -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--?====================== FOOTER START ----------------------  -->
-        <footer class="footer-sesction">
-            <div class="container">
-                <div class="footer-wrapper d-flex">
-                    <div class="description-box-footer">
-                        <img src="./images/footer-logo.png" alt=""/>
-                        <p class="fs-20-14 fw-normal text-white">
-                            Book doctor appointments online and get your ailments treated in no time with
-                            our expert medical support systems. Get rid of all your medical problem with our
-                            expert panel of doctors who guide you towards a healthier life.
-                        </p>
-                        <div class="call-box">
-                            <span class="number">91 &nbsp;&nbsp;&nbsp; |</span>
-                            <input type="text" class="phone-no"/>
-                            <span class="call-btn"><img src="./images/call.svg" alt="" class="m-0"/></span>
-                        </div>
-                    </div>
-                    <div class="leagle-servece-footer">
-                        <ul class="list-unstyled">
-                            <li class="fs-32-12 fw-bold text-white">Services</li>
-                            <li class="fs-20-8 fw-normal text-white">Appointments</li>
-                            <li class="fs-20-8 fw-normal text-white">Lab tests</li>
-                            <li class="fs-20-8 fw-normal text-white">A-Z medicine</li>
-                            <li class="fs-20-8 fw-normal text-white">Doctor support</li>
-                        </ul>
-                        <ul class="list-unstyled">
-                            <li class="fs-32-12 fw-bold text-white">Legal</li>
-                            <li class="fs-20-8 fw-normal text-white">General info</li>
-                            <li class="fs-20-8 fw-normal text-white">Privacy policy</li>
-                            <li class="fs-20-8 fw-normal text-white">Terms of services</li>
-                            <li class="fs-20-8 fw-normal text-white">Consultation</li>
-                            <li class="fs-20-8 fw-normal text-white">How it works</li>
-                        </ul>
-                        <ul class="list-unstyled">
-                            <li class="fs-32-12 fw-bold text-white">Talk to us</li>
-                            <li class="fs-20-8 fw-normal text-white">
-                                support@notinline.com
-                            </li>
-                            <li class="fs-20-8 fw-normal text-white">
-                                appointment@notinline.com
-                            </li>
-                            <li class="fs-20-8 fw-normal text-white">+91 12345 67899</li>
-                            <li class="fs-20-8 fw-normal text-white">+91 97642 09752</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3 class="fs-20-14 fw-semibold text-white mt-4">
-                    &copy; 2021-2023 All Rights Reserved
-                </h3>
+      </div>
+    </div>
+    <!-- ? =========================== CONTACT US SECTION START ============================ -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- ?======================= DOWNLOAD NOTINLINE APP SECTION START ========================= -->
+    <div class="download-app-section">
+      <div class="container">
+        <h4 class="fs-48-24 fw-semibold text-center mb-4">
+          Download the NotInLine
+          <span class="zic-underline"> NotInLine </span>
+          app
+        </h4>
+        <div class="download-app-wrapper d-flex">
+          <div class="download-left-image-box">
+            <img src="./images/dwonload-app-img.png" alt="image" />
+          </div>
+          <div class="download-right-box w-100">
+            <div class="call-box bg-white">
+              <span class="number text-black">
+                <span>91</span>
+                <span>|</span>
+              </span>
+              <input type="text" class="phone-no fs-24-16" />
+              <span class="call-btn"
+                ><img src="./images/call.svg" alt="" class="m-0"
+              /></span>
             </div>
-        </footer>
+            <div
+              class="download-stores d-flex align-items-center justify-content-start mt-4 gap-3"
+            >
+              <img src="./images/aple-store.png" class="" alt="" />
+              <img src="./images/play-store.png" class="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ?======================= DOWNLOAD NOTINLINE END ========================= -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--?====================== FOOTER START ----------------------  -->
+    <footer class="footer-sesction">
+      <div class="container">
+        <div class="footer-wrapper d-flex">
+          <div class="description-box-footer">
+            <img src="./images/footer-logo.png" alt="" />
+            <p class="fs-20-14 fw-normal text-white">
+              Book doctor appointments online and get your ailments treated in
+              no time with our expert medical support systems. Get rid of all
+              your medical problem with our expert panel of doctors who guide
+              you towards a healthier life.
+            </p>
+            <div class="call-box">
+              <span class="number">91 &nbsp;&nbsp;&nbsp; |</span>
+              <input type="text" class="phone-no" />
+              <span class="call-btn"
+                ><img src="./images/call.svg" alt="" class="m-0"
+              /></span>
+            </div>
+          </div>
+          <div class="leagle-servece-footer">
+            <ul class="list-unstyled">
+              <li class="fs-32-12 fw-bold text-white">Services</li>
+              <li class="fs-20-8 fw-normal text-white">Appointments</li>
+              <li class="fs-20-8 fw-normal text-white">Lab tests</li>
+              <li class="fs-20-8 fw-normal text-white">A-Z medicine</li>
+              <li class="fs-20-8 fw-normal text-white">Doctor support</li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="fs-32-12 fw-bold text-white">Legal</li>
+              <li class="fs-20-8 fw-normal text-white">General info</li>
+              <li class="fs-20-8 fw-normal text-white">Privacy policy</li>
+              <li class="fs-20-8 fw-normal text-white">Terms of services</li>
+              <li class="fs-20-8 fw-normal text-white">Consultation</li>
+              <li class="fs-20-8 fw-normal text-white">How it works</li>
+            </ul>
+            <ul class="list-unstyled">
+              <li class="fs-32-12 fw-bold text-white">Talk to us</li>
+              <li class="fs-20-8 fw-normal text-white">
+                support@notinline.com
+              </li>
+              <li class="fs-20-8 fw-normal text-white">
+                appointment@notinline.com
+              </li>
+              <li class="fs-20-8 fw-normal text-white">+91 12345 67899</li>
+              <li class="fs-20-8 fw-normal text-white">+91 97642 09752</li>
+            </ul>
+          </div>
+        </div>
+        <h3 class="fs-20-14 fw-semibold text-white mt-4">
+          &copy; 2021-2023 All Rights Reserved
+        </h3>
+      </div>
+    </footer>
 
-        <!--?====================== FOOTER END ----------------------  -->
-        <!--  -->
-        <script type="text/javascript" src="./javascript/slick.min.js"></script>
-        <script type="text/javascript">
-            $(document)
-                .ready(function () {
-                    $(".slider-wrapper").slick({
-                        slidesToScroll: 1,
-                        centerPadding: "20px",
-                        infinite: false,
-                        arrows: true,
-                        dots: true,
-                        speed: 1000,
-                        variableWidth: true,
-                        initialSlide: 1,
-                        // prevArrow: '<img class="custom-arrow-left" id="RArrow"
-                        // src="./images/arrow-btn.png" alt="arrow" />',
-                        nextArrow: '<img class="custom-arrow-right" id="LArrow" src="./images/arrow-btn.png" alt="ar' +
-                                'row"/>',
-                        centerMode: true
-                    });
-                    $(".happy-customer-wrapper").slick({
-                        slidesToScroll: 1,
-                        centerPadding: "30px",
-                        infinite: false,
-                        arrows: true,
-                        dots: false,
-                        speed: 1000,
-                        variableWidth: true,
-                        prevArrow: '<img class="custom-arrow-left" id="RArrow" src="./images/arrow-btn.png" alt="arr' +
-                                'ow" />',
-                        nextArrow: '<img class="custom-arrow-right" id="LArrow" src="./images/arrow-btn.png" alt="ar' +
-                                'row"/>',
-                        centerMode: false,
-                        initialSlide: 0,
-                        responsive: [
-                            {
-                                breakpoint: 1440,
-                                settings: {
-                                    speed: 1000,
-                                    centerMode: true,
-                                    infinite: true,
-                                    centerPadding: "40px"
-                                }
-                            }
-                        ]
-                    });
-                });
-        </script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
-    </body>
+    <!--?====================== FOOTER END ----------------------  -->
+    <!--  -->
+    <script type="text/javascript" src="./javascript/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider-wrapper").slick({
+          slidesToScroll: 1,
+          centerPadding: "20px",
+          infinite: false,
+          arrows: true,
+          dots: true,
+          speed: 1000,
+          variableWidth: true,
+          initialSlide: 1,
+          // prevArrow: '<img class="custom-arrow-left" id="RArrow"
+          // src="./images/arrow-btn.png" alt="arrow" />',
+          nextArrow:
+            '<img class="custom-arrow-right" id="LArrow" src="./images/arrow-btn.png" alt="ar' +
+            'row"/>',
+          centerMode: true,
+        });
+        $(".happy-customer-wrapper").slick({
+          slidesToScroll: 1,
+          centerPadding: "30px",
+          infinite: false,
+          arrows: true,
+          dots: false,
+          speed: 1000,
+          variableWidth: true,
+          prevArrow:
+            '<img class="custom-arrow-left" id="RArrow" src="./images/arrow-btn.png" alt="arr' +
+            'ow" />',
+          nextArrow:
+            '<img class="custom-arrow-right" id="LArrow" src="./images/arrow-btn.png" alt="ar' +
+            'row"/>',
+          centerMode: false,
+          initialSlide: 0,
+          responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                speed: 1000,
+                centerMode: true,
+                infinite: true,
+                centerPadding: "40px",
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

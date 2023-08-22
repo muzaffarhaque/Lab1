@@ -72,7 +72,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    &:hover{
+    &:hover {
         background: #3fb1ef;
         color: black;
     }
@@ -91,7 +91,7 @@ body {
     background-color: white;
     color: #138ED1;
     border: 1px solid #008DD9;
-    &:hover{
+    &:hover {
         background: #58b7eb;
         color: black;
     }
@@ -283,38 +283,47 @@ body {
     }
 }
 // todo:---------------- BOOK APOINTMENT MODAL START ================
-.custom-modal-dialog{
+.custom-modal-dialog {
     max-width: 847px;
     width: 100vw;
     padding: 20px;
     background: white;
     border-radius: 4px;
 }
-.modal-body{
+.modal-body {
     display: flex;
-  
+
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
-    .input-wrapper{
+    .input-wrapper {
         width: 48%;
-        img{
+        img {
             max-width: 50px;
         }
-        i{
+        .icon-frame {
             width: 6vw;
-            max-width: 50px;
+            aspect-ratio:1/1;
+            max-width: 42px;
+            height: 100%;
             background-color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+            i{
+                color: #008DD9;
+            }
         }
-        .input-box{
+        .input-box {
             padding: 10px 20px;
             height: 40px;
             border-radius: 4px;
-            
+
         }
-        .form-select{
+        .form-select {
             outline: none;
             box-shadow: none;
             line-height: 22px;
@@ -553,7 +562,7 @@ body {
     min-width: 300px;
     text-align: center;
     background-color: white;
-    margin:10px 0 0 14px;
+    margin: 10px 0 0 14px;
     &::before {
         content: "";
         position: absolute;
@@ -567,7 +576,7 @@ body {
     }
     p {
         padding: 30px;
-        
+
     }
     .customer-image {
         margin: 0 auto;
@@ -634,7 +643,7 @@ body {
 .contact-us-right-box {
     width: 56%;
     padding-left: 5%;
-   
+
 }
 .input-wrapper {
     display: flex;
@@ -664,23 +673,23 @@ body {
 // 
 // 
 // 
-   // ?====================== download app css start =========================
-   .download-app-section{
-    padding: 30px 0 152px 0;
-    background: url(../images/bg-wave-notinline.png) bottom no-repeat;
+// ?====================== download app css start =========================
+.download-app-section {
+    padding: 30px 0 152px;
+    background: url("../images/bg-wave-notinline.png") bottom no-repeat;
     background-size: contain;
 }
-.download-app-wrapper{
+.download-app-wrapper {
     align-items: end;
     justify-content: center;
     gap: 30px;
-    .download-right-box{
+    .download-right-box {
         width: 55%;
     }
 }
-.download-stores{
+.download-stores {
     width: 100%;
-    max-width: 589px;     
+    max-width: 589px;
 }
 // ?====================== download app css end =========================
 // 
@@ -712,7 +721,7 @@ body {
     p {
         margin-bottom: 72px;
     }
-   
+
 }
 .call-box {
     width: 100%;
@@ -729,7 +738,7 @@ body {
     .number {
         width: 90px;
         min-width: 70px;
-        padding:12px;
+        padding: 12px;
         font-size: 24px;
         line-height: 30px;
         color: white;
@@ -744,7 +753,7 @@ body {
         border: none;
         outline: none;
         height: 100%;
-        padding:20px  12px;
+        padding: 20px 12px;
         background-color: transparent;
 
     }
@@ -755,7 +764,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:24px 10px;
+        padding: 24px 10px;
     }
 }
 

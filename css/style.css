@@ -312,11 +312,20 @@ body {
 .modal-body .input-wrapper img {
   max-width: 50px;
 }
-.modal-body .input-wrapper i {
+.modal-body .input-wrapper .icon-frame {
   width: 6vw;
-  max-width: 50px;
+  aspect-ratio: 1/1;
+  max-width: 42px;
+  height: 100%;
   background-color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+.modal-body .input-wrapper .icon-frame i {
+  color: #008DD9;
 }
 .modal-body .input-wrapper .input-box {
   padding: 10px 20px;
@@ -612,8 +621,8 @@ body {
 }
 
 .download-app-section {
-  padding: 30px 0 152px 0;
-  background: url(../images/bg-wave-notinline.png) bottom no-repeat;
+  padding: 30px 0 152px;
+  background: url("../images/bg-wave-notinline.png") bottom no-repeat;
   background-size: contain;
 }
 
