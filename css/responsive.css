@@ -214,8 +214,14 @@
   }
   .custom-modal-dialog {
     width: 95vw;
-    padding: 0px;
+    padding: 0;
     background: transparent;
+  }
+  .modal-body {
+    gap: 10px;
+  }
+  .modal-body .input-wrapper {
+    width: 100%;
   }
   .specialized-section {
     padding-top: 60px;
@@ -301,7 +307,7 @@
     overflow: hidden;
   }
   .happy-customar-section h4 {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
   }
   .customer-card-frame {
     max-width: 300px;
@@ -313,10 +319,10 @@
     height: 56%;
   }
   .customer-card-frame .big-text {
-    padding: 21px 17px 8px 17px;
+    padding: 21px 17px 8px;
     font-size: 6px;
     line-height: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .customer-card-frame .customer-image {
     margin: 0 auto;
@@ -375,7 +381,7 @@
     height: 40px;
   }
   .download-app-section {
-    padding: 20px 0 62px 0;
+    padding: 20px 0 62px;
   }
   .download-app-wrapper {
     flex-wrap: wrap;

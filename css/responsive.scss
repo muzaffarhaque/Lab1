@@ -54,10 +54,10 @@
         }
 
     }
-    .download-stores{
-        img{
+    .download-stores {
+        img {
             width: 47%;
-        }   
+        }
     }
 }
 @media (max-width:1024px ) and (min-width:820px) {
@@ -235,38 +235,44 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .hero-serch-box{
-         max-height: 50px;
-         bottom: -3%;
-         .serch-input-field{
+    .hero-serch-box {
+        max-height: 50px;
+        bottom: -3%;
+        .serch-input-field {
             padding: 10px 20px;
             line-height: 29px;
-            
-         }
-         .serch-icon-box{
+
+        }
+        .serch-icon-box {
             max-width: 73px;
-            .serch-icon{
+            .serch-icon {
                 width: 34px;
             }
-        
+
         }
     }
-  // todo:---------------- BOOK APOINTMENT MODAL START ================
-.custom-modal-dialog{
-    width: 95vw;
-    padding: 0px;
-    background: transparent;
-}
-// todo:---------------- BOOK APOINTMENT MODAL END ================
-// ?===================== HERO SECTION CSS END   ====================
-// 
+    // todo:---------------- BOOK APOINTMENT MODAL START ================
+    .custom-modal-dialog {
+        width: 95vw;
+        padding: 0;
+        background: transparent;
+    }
+    .modal-body {
+        gap: 10px;
+        .input-wrapper {
+            width: 100%;
+        }
+    }
+    // todo:---------------- BOOK APOINTMENT MODAL END ================
+    // ?===================== HERO SECTION CSS END   ====================
+    // 
     // 
     // 
     // 
     // 
     // 
     // ?========================= SPECIALIZED DOCTORES SLIDER START =========================
-    .specialized-section{
+    .specialized-section {
         padding-top: 60px;
     }
     .special-doctor-card {
@@ -276,7 +282,7 @@
             bottom: -67px;
         }
     }
-    .specilaiz-doctors-slider{
+    .specilaiz-doctors-slider {
         padding-top: 5px;
     }
     .card-frame {
@@ -316,7 +322,7 @@
     // 
     // 
     .call-box {
-        .call-btn{
+        .call-btn {
             padding: 10px;
         }
     }
@@ -401,8 +407,8 @@
     .happy-customar-section {
         padding: 40px 0;
         overflow: hidden;
-        h4{
-            margin-bottom: 0px !important;
+        h4 {
+            margin-bottom: 0 !important;
         }
     }
     .customer-card-frame {
@@ -414,19 +420,19 @@
             height: 56%;
         }
         .big-text {
-            padding: 21px 17px 8px 17px;
+            padding: 21px 17px 8px;
             font-size: 6px;
             line-height: 10px;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
         .customer-image {
             margin: 0 auto;
             position: relative;
             width: 100px;
         }
-        .customer-name{
+        .customer-name {
             margin: 0 !important;
-            
+
         }
 
     }
@@ -460,25 +466,25 @@
     // 
     // 
     // ?======================= CONTACT US CSS START ======================
-    .contact-us-section{
+    .contact-us-section {
         padding: 10px 0;
     }
-    .contact-wrapper{
+    .contact-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .contact-image-left-box{
+    .contact-image-left-box {
         width: 100%;
-        img{
+        img {
             width: 100%;
         }
     }
     .contact-us-right-box {
         width: 100%;
         padding: 30px 0;
-       
+
     }
     .input-wrapper {
         display: flex;
@@ -500,19 +506,19 @@
     // 
     // 
     // ?====================== download app css start =========================
-    .download-app-section{
-        padding: 20px 0 62px 0;
+    .download-app-section {
+        padding: 20px 0 62px;
     }
-    .download-app-wrapper{
-       flex-wrap: wrap;
-        
+    .download-app-wrapper {
+        flex-wrap: wrap;
+
     }
-  
-    .mk-full{
+
+    .mk-full {
         width: 100%;
     }
-    .download-left-image-box{
-        img{
+    .download-left-image-box {
+        img {
             width: 100%;
         }
     }

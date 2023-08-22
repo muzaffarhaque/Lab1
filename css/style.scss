@@ -72,6 +72,10 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &:hover{
+        background: #3fb1ef;
+        color: black;
+    }
 }
 .mw-333 {
     max-width: 333px;
@@ -87,6 +91,10 @@ body {
     background-color: white;
     color: #138ED1;
     border: 1px solid #008DD9;
+    &:hover{
+        background: #58b7eb;
+        color: black;
+    }
 }
 .w-51 {
     width: 50%;
@@ -281,6 +289,37 @@ body {
     padding: 20px;
     background: white;
     border-radius: 4px;
+}
+.modal-body{
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    .input-wrapper{
+        width: 48%;
+        img{
+            max-width: 50px;
+        }
+        i{
+            width: 6vw;
+            max-width: 50px;
+            background-color: white;
+            text-align: center;
+        }
+        .input-box{
+            padding: 10px 20px;
+            height: 40px;
+            border-radius: 4px;
+            
+        }
+        .form-select{
+            outline: none;
+            box-shadow: none;
+            line-height: 22px;
+        }
+    }
 }
 // todo:---------------- BOOK APOINTMENT MODAL END ================
 // ?===================== HERO SECTION CSS END   ====================
@@ -605,6 +644,7 @@ body {
     margin: 21px 0;
     img {
         width: 6vw;
+        max-width: 86px;
     }
     input {
         border-radius: 15px;

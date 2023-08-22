@@ -79,6 +79,12 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+.host-btn:hover,
+.primary-bth:hover,
+.sub-primary-btn:hover {
+  background: #3fb1ef;
+  color: black;
+}
 
 .mw-333 {
   max-width: 333px;
@@ -96,6 +102,10 @@ body {
   background-color: white;
   color: #138ED1;
   border: 1px solid #008DD9;
+}
+.host-btn:hover {
+  background: #58b7eb;
+  color: black;
 }
 
 .w-51 {
@@ -287,6 +297,36 @@ body {
   padding: 20px;
   background: white;
   border-radius: 4px;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.modal-body .input-wrapper {
+  width: 48%;
+}
+.modal-body .input-wrapper img {
+  max-width: 50px;
+}
+.modal-body .input-wrapper i {
+  width: 6vw;
+  max-width: 50px;
+  background-color: white;
+  text-align: center;
+}
+.modal-body .input-wrapper .input-box {
+  padding: 10px 20px;
+  height: 40px;
+  border-radius: 4px;
+}
+.modal-body .input-wrapper .form-select {
+  outline: none;
+  box-shadow: none;
+  line-height: 22px;
 }
 
 .mw-585 {
@@ -556,6 +596,7 @@ body {
 }
 .input-wrapper img {
   width: 6vw;
+  max-width: 86px;
 }
 .input-wrapper input {
   border-radius: 15px;
