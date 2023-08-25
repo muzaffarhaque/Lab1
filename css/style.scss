@@ -22,7 +22,7 @@ body {
 }
 .mb-flex,
 .mb-show {
-    display: none;
+    display: none !important;
 }
 .secondary-btn {
     border-radius: 4px;
@@ -130,7 +130,9 @@ body {
     line-height: 14px;
 }
 .fs-18-10,
-.fs-18-16 {
+.fs-18-16,
+.fs-18-14,
+.fx-18 {
     font-size: 18px;
     line-height: 24px;
 }
@@ -617,6 +619,38 @@ body {
         background: rgba(217, 217, 217, 0.30);
         padding: 30px 24px 28px;
     }
+}
+
+.frequ-ask-question{
+    margin: 35px 0 0;
+    .accordion{
+       
+    .accordion-item{
+        border: none;
+        margin-bottom: 18px;
+        border-radius: 22px;
+        background: rgba(217, 217, 217, 0.30);
+        padding: 30px 24px 28px;
+        .accordion-button{
+           padding: 0;
+            border-radius: 22px;
+            background: transparent;
+     
+            &:focus{
+                box-shadow: none;
+                border: none;
+            }
+            &:not(.collapsed){
+                box-shadow: none;
+                border: none;
+                color: #2F2F2F;
+            }
+        }
+        .accordion-body{
+            padding: 15px 0 0 0;
+        }
+    }
+}
 }
 // ?======================= FREQUENTLY ASKED Q SECTION END  =========================
 // 

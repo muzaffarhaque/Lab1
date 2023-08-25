@@ -80,14 +80,14 @@
     // ================= COMMON CSS START ================
 
     .mb-show {
-        display: block;
+        display: block !important;
     }
     .mb-flex {
-        display: flex;
+        display: flex !important;
     }
     .desk-offer,
     .desk-show {
-        display: none;
+        display: none !important;
     }
     .w-51 {
         width: 100%;
@@ -100,9 +100,9 @@
     // 
     // 
     // ================== FONT SIZE START ============
-    .fs-20-14 {
+    .fs-20-14,.fs-18-14 {
         font-size: 14px;
-        line-height: 15px;
+        line-height: 19px;
     }
     .fs-18-16,
     .fs-20-16,
@@ -145,6 +145,7 @@
     .logo-icon {
         display: none;
     }
+    
     .mb-logo {
         display: block;
         position: absolute;
@@ -175,19 +176,29 @@
         min-height: 100vh;
         flex-direction: column;
         justify-content: start;
-        padding-top: 50px;
+        gap: 0;
+        padding-top: 20px;
         transition: all 0.4s;
         background-color: whitesmoke;
         z-index: 10;
-
+        .activ{
+            font-weight: 500;
+        }
         li {
             width: 100%;
-            padding: 10px;
+            padding: 12px 51px;
             text-align: start;
-            padding-left: 20%;
+            font-size: 18px;
+            color: #2F2F2F;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap:9px;
+            border-bottom: 1px solid rgba(110, 110, 110, 0.56);
             &:hover {
-                background-color: black;
-                color: white;
+                // background-color: black;
+                // color: white;
             }
         }
     }
@@ -199,12 +210,50 @@
         .menu-lable {
             .fa-xmark {
                 display: block;
+                font-size: 24px;
             }
             .fa-bars {
                 display: none;
             }
         }
     }
+    // todo ============== MOBILE NAV DROPDOWN SETCION START ===================
+    .dropdown-btn-custom {
+        width: 100vw;
+        padding: 12px 51px ;
+        text-align: start;
+        font-size: 18px;
+        color: #2F2F2F;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .custom-dropdown-box {
+        padding: 0;
+        background: #138ED1;
+        display: none;
+        .list {
+            padding: 8px 87px;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap:14px;
+            border: none;
+            &:hover{
+                background-color: #75CFFF;
+            }
+        }
+    }
+    #dropDown:checked~ .custom-dropdown-box{
+        display: block !important;
+    }
+    // todo ============== MOBILE NAV DROPDOWN SETCION END   ===================
     // ?=============== HEADER CSS END ------------------------------
     // 
     // 
