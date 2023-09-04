@@ -82,7 +82,8 @@
   .mb-full {
     width: 100%;
   }
-  .fs-20-14, .fs-18-14 {
+  .fs-18-14,
+  .fs-20-14 {
     font-size: 14px;
     line-height: 19px;
   }
@@ -121,12 +122,19 @@
   .logo-icon {
     display: none;
   }
+  .footer-logo {
+    width: 6rem;
+    height: 3rem;
+    display: block !important;
+  }
   .mb-logo {
     display: block;
     position: absolute;
-    left: 0;
+    left: 5%;
     top: 50%;
     transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
   }
   .header-section {
     position: fixed;

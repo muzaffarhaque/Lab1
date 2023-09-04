@@ -100,7 +100,8 @@
     // 
     // 
     // ================== FONT SIZE START ============
-    .fs-20-14,.fs-18-14 {
+    .fs-18-14,
+    .fs-20-14 {
         font-size: 14px;
         line-height: 19px;
     }
@@ -145,13 +146,19 @@
     .logo-icon {
         display: none;
     }
-    
+    .footer-logo {
+        width: 6rem;
+        height: 3rem;
+        display: block !important;
+    }
     .mb-logo {
         display: block;
         position: absolute;
-        left: 0;
+        left: 5%;
         top: 50%;
         transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
     }
     .header-section {
         position: fixed;
@@ -181,7 +188,7 @@
         transition: all 0.4s;
         background-color: whitesmoke;
         z-index: 10;
-        .activ{
+        .activ {
             font-weight: 500;
         }
         li {
@@ -194,7 +201,7 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            gap:9px;
+            gap: 9px;
             border-bottom: 1px solid rgba(110, 110, 110, 0.56);
             &:hover {
                 // background-color: black;
@@ -220,7 +227,7 @@
     // todo ============== MOBILE NAV DROPDOWN SETCION START ===================
     .dropdown-btn-custom {
         width: 100vw;
-        padding: 12px 51px ;
+        padding: 12px 51px;
         text-align: start;
         font-size: 18px;
         color: #2F2F2F;
@@ -243,14 +250,14 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            gap:14px;
+            gap: 14px;
             border: none;
-            &:hover{
+            &:hover {
                 background-color: #75CFFF;
             }
         }
     }
-    #dropDown:checked~ .custom-dropdown-box{
+    #dropDown:checked~ .custom-dropdown-box {
         display: block !important;
     }
     // todo ============== MOBILE NAV DROPDOWN SETCION END   ===================

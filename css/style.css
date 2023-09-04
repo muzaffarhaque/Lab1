@@ -23,7 +23,7 @@ body {
 }
 
 .mb-flex,
-.mb-show {
+.mb-show ,.footer-logo{
   display: none !important;
 }
 
