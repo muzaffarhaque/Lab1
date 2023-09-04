@@ -23,7 +23,7 @@ body {
 }
 
 .mb-flex,
-.mb-show ,.footer-logo{
+.mb-show {
   display: none !important;
 }
 
@@ -653,7 +653,6 @@ body {
 
 .download-app-section {
   padding: 30px 0 152px;
-  background: url("../images/bg-wave-notinline.png") bottom no-repeat;
   background-size: contain;
 }
 
